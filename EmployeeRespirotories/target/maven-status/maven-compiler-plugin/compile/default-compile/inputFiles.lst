@@ -1,5 +1,8 @@
 C:\IMCS\workspace\EmployeeApplication\EmployeeRespirotories\src\main\java\org\EmployeeBeans\Employee.java
 C:\IMCS\workspace\EmployeeApplication\EmployeeRespirotories\src\main\java\org\EmployeeDBImpl\EmployeeDBInterface.java
+C:\IMCS\workspace\EmployeeApplication\EmployeeRespirotories\src\main\java\org\EmployeeRespirotories\EmployeeSalaryDao.java
+C:\IMCS\workspace\EmployeeApplication\EmployeeRespirotories\src\main\java\org\EmployeeBeans\Department.java
 C:\IMCS\workspace\EmployeeApplication\EmployeeRespirotories\src\main\java\org\EmployeeRespirotories\JDBCConnectionFactory.java
 C:\IMCS\workspace\EmployeeApplication\EmployeeRespirotories\src\main\java\org\EmployeeDBImpl\EmployeeDBImpl.java
-C:\IMCS\workspace\EmployeeApplication\EmployeeRespirotories\src\main\java\org\EmployeeRespirotories\DBQueryExecution.java
+C:\IMCS\workspace\EmployeeApplication\EmployeeRespirotories\src\main\java\org\EmployeeRespirotories\DepartmentDao.java
+C:\IMCS\workspace\EmployeeApplication\EmployeeRespirotories\src\main\java\org\EmployeeRespirotories\EmployeeDao.java

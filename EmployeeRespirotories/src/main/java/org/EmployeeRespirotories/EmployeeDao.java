@@ -4,17 +4,13 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 
 import org.EmployeeBeans.Employee;
 
-public class DBQueryExecution {
+public class EmployeeDao {
 
 	public Employee getEmployeeRecords(int empNo) {
-		String sqlQuery = "SELECT employees.emp_no,employees.first_name,employees.last_name,employees.gender,dept_name,salary "
-				+ "FROM employees inner JOIN dept_emp ON employees.emp_no = dept_emp.emp_no "
-				+ "INNER JOIN departments ON departments.dept_no = dept_emp.dept_no "
-				+ "INNER JOIN salaries ON employees.emp_no = salaries.emp_no where employees.emp_no = ?";
+		String sqlQuery = "SELECT employees.emp_no,employees.first_name,employees.last_name,employees.gender,employees.birth_date,employees.hire_date from employees.employees where employees.emp_no = ?";
 		// System.out.println(sqlQuery);
 
 		try (Connection conn = JDBCConnectionFactory.getConnection();
@@ -28,8 +24,8 @@ public class DBQueryExecution {
 				emp.setFirstName(rs.getString(2));
 				emp.setLastName(rs.getString(3));
 				emp.setGender(rs.getString(4));
-				emp.setDeptName(rs.getString(5));
-				emp.setSalary(rs.getDouble(6));
+				emp.setBirthDate(rs.getDate(5));
+				emp.setHireDate(rs.getDate(6));
 				
 			}
 
